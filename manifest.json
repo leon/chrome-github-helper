@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Helper",
+  "version": "1.0.0",
+  "description": "Adds features to github that it should have",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
